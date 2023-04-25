@@ -1,1 +1,3 @@
-console.log("Hello")
+import { buildHomePage } from "./home-page";
+
+buildHomePage()
