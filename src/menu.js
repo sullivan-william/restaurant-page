@@ -1,30 +1,10 @@
+import { removeAllChildNodes } from "./navbar"
+
 export function buildMenu() {
-    const header = document.createElement('header')
-    const main = document.createElement('main')
-    const h1 = document.createElement('h1')
+    const main = document.querySelector('.main')
     const h2 = document.createElement('h2')
-    const p = document.createElement('p')
-    const nav = document.createElement('nav')
-    const ul = document.createElement('ul')
-    const li = document.createElement('li')
-    const menuLi = document.createElement('li')
-    const contactLi = document.createElement('li')
 
-    const content = document.querySelector('#content')
-    content.appendChild(header)
-    content.appendChild(main)
-
-    h1.textContent = "Random Restaurant"
-    header.appendChild(h1)
-
-    header.appendChild(nav)
-    nav.appendChild(ul)
-    li.textContent = "Home"
-    menuLi.textContent = "Menu"
-    contactLi.textContent = "Contact"
-    ul.appendChild(li)
-    ul.appendChild(menuLi)
-    ul.appendChild(contactLi)
+    removeAllChildNodes(main)
 
     h2.textContent = "Menu"
     main.appendChild(h2)
@@ -54,4 +34,6 @@ export function buildMenu() {
 
     menuUl.classList.add('menu')
     main.appendChild(menuUl)
+
+    content.appendChild(main)
 }
