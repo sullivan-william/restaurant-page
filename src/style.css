@@ -12,3 +12,8 @@ ul {
     align-items: center;
     padding: 0;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}

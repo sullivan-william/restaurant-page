@@ -1,3 +1,4 @@
 import { buildHomePage } from "./home-page";
+import { buildMenu } from "./menu";
 
-buildHomePage()
+buildMenu()

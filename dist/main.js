@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page */ \"./src/home-page.js\");\n\n\n(0,_home_page__WEBPACK_IMPORTED_MODULE_0__.buildHomePage)()\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page */ \"./src/home-page.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n(0,_menu__WEBPACK_IMPORTED_MODULE_1__.buildMenu)()\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"buildMenu\": () => (/* binding */ buildMenu)\n/* harmony export */ });\nfunction buildMenu() {\n    const header = document.createElement('header')\n    const main = document.createElement('main')\n    const h1 = document.createElement('h1')\n    const h2 = document.createElement('h2')\n    const p = document.createElement('p')\n    const nav = document.createElement('nav')\n    const ul = document.createElement('ul')\n    const li = document.createElement('li')\n    const menuLi = document.createElement('li')\n    const contactLi = document.createElement('li')\n\n    const content = document.querySelector('#content')\n    content.appendChild(header)\n    content.appendChild(main)\n\n    h1.textContent = \"Random Restaurant\"\n    header.appendChild(h1)\n\n    header.appendChild(nav)\n    nav.appendChild(ul)\n    li.textContent = \"Home\"\n    menuLi.textContent = \"Menu\"\n    contactLi.textContent = \"Contact\"\n    ul.appendChild(li)\n    ul.appendChild(menuLi)\n    ul.appendChild(contactLi)\n\n    h2.textContent = \"Menu\"\n    main.appendChild(h2)\n\n    const menuUl = document.createElement('ul')\n\n    const menu = [\n        {\n            name: \"Coffee & Tea\",\n            price: 4\n        },\n        {\n            name: \"Breakfast Burrito\",\n            price: 10\n        },\n        {\n            name: \"Random Menu Item\",\n            price: 80\n        }\n    ]\n\n    menu.forEach(item => {\n        let li = document.createElement('li')\n        li.textContent = `${item.name} - $${item.price}`\n        menuUl.appendChild(li)\n    })\n\n    menuUl.classList.add('menu')\n    main.appendChild(menuUl)\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
