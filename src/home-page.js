@@ -30,6 +30,4 @@ export function buildHomePage() {
     p.textContent = "lorem ipsum fjoipwa ojpowjefpo jmpowfepo pojopwf opjopjwf opjopwje opjopjwef pojopwefjpo pjopjwfeopjpo opjopjfweop jpojopjjpo jopwjfopjop awoiefjp jpwajopgwj awefeowpk"
     main.appendChild(h2)
     main.appendChild(p)
-
-    return content
 }
